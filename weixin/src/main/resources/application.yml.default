@@ -1,0 +1,24 @@
+wx:
+  miniApp:
+    appId: #微信小程序的appId
+    secret: #微信小程序的Secret
+    token: #微信小程序消息服务器配置的token
+    aesKey: #微信小程序消息服务器配置的EncodingAESKey
+    msgDataFormat: JSON
+  pay:
+    unifiedOrderUrl: https://api.mch.weixin.qq.com/pay/unifiedorder #统一下单地址 【仿真系统】生产去掉sandboxnew
+    mchId: #商户号
+    key: #商户号密钥
+    mchAppid: # 企业商户appID
+    sandboxKey: # 沙盒密钥【仿真系统】!!!仿真系统不稳定
+    notifyUrl: #支付成功回调地址
+    refundUrl: https://api.mch.weixin.qq.com/secapi/pay/refund #退款
+    transfers: https://api.mch.weixin.qq.com/mmpaymkttransfers/promotion/transfers # 微信提现
+    certPath:  #退款需要的证书
+  url:
+    clientCredential: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={appId}&secret={appSecret}
+    code2session: https://api.weixin.qq.com/sns/jscode2session?appid={appId}&secret={secret}&js_code={jsCode}&grant_type={grantType}
+    orderQuery: https://api.mch.weixin.qq.com/pay/orderquery # 查询订单 【仿真系统】生产去掉sandboxnew
+    getSignKey: https://api.mch.weixin.qq.com/pay/getsignkey  # 支付系统获得key【仿真系统】
+
+
