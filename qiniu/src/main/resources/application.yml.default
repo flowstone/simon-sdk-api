@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+qiniu:
+  accessKey: #填写七牛云
+  secretKey: #填写七牛云
+  bucket: #填写七牛云
+  url: #填写域名地址http://img.xueyao.me/
